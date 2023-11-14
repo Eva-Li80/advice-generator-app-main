@@ -33,4 +33,6 @@ async function adviceContent() {
   }
 }
 
+adviceContent()
+
 knapp.addEventListener("click", adviceContent);
