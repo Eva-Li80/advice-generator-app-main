@@ -19,16 +19,10 @@ async function adviceContent() {
     const adviceId = document.querySelector("#advice-id");
     const advice = document.querySelector("#advice-content");
 
-    // Kolla om det finns råd i data.slip
+  
     if (data.slip) {
-      // Uppdatera HTML med det slumpmässiga rådet
       adviceId.innerHTML = data.slip.id;
       advice.innerHTML = data.slip.advice;
-
-      // Rensa tidigare råd från advices-container
-    //   advices.innerHTML = "";
-      
-      // Lägg till det slumpmässiga rådet i advices-container
       advices.appendChild(adviceId);
       advices.appendChild(advice);
     } else {
